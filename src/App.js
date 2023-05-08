@@ -1,9 +1,14 @@
 import React from 'react'
+import Logo from './components/Logo'
+import GetApi from './components/GetApi'
 
 
 function App() {
   return (
-    <div className='app'>App</div>
+    <div className='app'>
+      <Logo />
+      <GetApi />
+    </div>
   );
 }
 
