@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import '../styles/app.css'
 import Loader from '../assets/steam-loading.gif'
-import MoreInfo from "./MoreInfo";
 import { Link } from "react-router-dom";
 
 
