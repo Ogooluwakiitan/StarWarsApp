@@ -1,14 +1,20 @@
 import React from 'react'
-import Logo from './components/Logo'
-import GetApi from './components/GetApi'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import GetApi from './components/GetApi';
+
 
 
 function App() {
   return (
-    <div className='app'>
-      <Logo />
-      <GetApi />
-    </div>
+    <BrowserRouter>
+    <Routes>
+    <Route path="/" element={<GetApi/>}/>
+      </Routes> 
+  </BrowserRouter>
+    // <div className='app'>
+    //   <Logo />
+    //   <GetApi />
+    // </div>
   );
 }
 

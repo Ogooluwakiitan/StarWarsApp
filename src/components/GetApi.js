@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from "react";
 import '../styles/app.css'
 import Loader from '../assets/steam-loading.gif'
+import { Link } from "react-router-dom";
+
+
 
 const GetApi = () => {
   const [moviesData, setMoviesData] = useState([]);
@@ -30,8 +33,9 @@ const GetApi = () => {
         <h2>{movie.title}</h2>
         <span className="date">{movie.release_date}</span>
         <p>{movie.opening_crawl.substring(0, 260)}...</p>
+        <Link to="/">Back to list</Link>
         <div className="more-info">
-          <a href="#home">More Info</a>
+          <Link to="/MoreInfo">More Info...</Link>
         </div>
       </div>
         
